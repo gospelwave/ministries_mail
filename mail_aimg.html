@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Ministries.io - Signature generate</title>
+
+    <meta name="viewport"
+          content="initial-scale=1, minimum-scale=1, user-scalable=no, maximum-scale=1, width=device-width, minimal-ui">
+
+    <script type="text/javascript" src="js/mail.min.js"></script>
+
+</head>
+<body style="font-family: 'verdana', 'helvetica', 'arial', sans-serif;">
+
+
+</body>
+</html>
+
+<script id="mail" type="text/x-handlebars-template">
+
+    <table>
+
+        <tbody>
+        <tr>
+            <td style="padding-bottom: 20px">
+                <table style="letter-spacing: 0.01em">
+                    <tbody>
+                    <tr style="vertical-align: top;">
+                        {{#if picture}}
+                        <td style="padding-right:20px;">
+                            <img alt="{{ name }}" width="120px" height="120px"
+                                 style="border-radius: 120px;"
+                                 src="http://signature.ministries.io/images/people/{{ picture }}.jpg">
+                        </td>
+                        {{/if}}
+                        <td style="vertical-align: middle;padding-left:10px;">
+                            <h1 style="text-align: left; font-weight: 600; color: #A3191C; margin: 0; font-size: 20px; line-height: 1.2em;">
+                                {{ name
+                                }}</h1>
+                            <h2 style="text-align: left; color:#333333; font-size: 16px; font-weight: 100; line-height: 1em;">{{ fonction
+                                }}</h2>
+                            {{#if mobile}}
+                            <h3 style="text-align: left; color:#333333; font-size: 14px; font-weight: 100; line-height: 1em;">{{ mobile
+                                }}</h3>
+                            {{/if}}
+                            <p style="margin: 0; padding-top: 4px;">
+                                <a style="text-decoration: none; display: inline-block; margin: 0 8px 0 0;"
+                                   href="https://www.facebook.com/{{facebook}}" target="_blank">
+                                    <img alt="Facebook" width="18px" height="18px"
+                                         style="display: block;  width: 18px; height: 18px; margin: 0 auto;"
+                                         src="http://signature.ministries.io/images/aimg/facebook_2x.png">
+                                </a>
+
+
+                                <a style="text-decoration: none; display: inline-block; margin: 0 8px;"
+                                   href="https://twitter.com/{{twitter}}" target="_blank">
+                                    <img alt="Twitter" width="21px" height="17px"
+                                         style="display: block; width: 21px; height: 17px; margin: 0 auto;"
+                                         src="http://signature.ministries.io/images/aimg/twitter_2x.png">
+                                </a>
+
+
+                                <a style="text-decoration: none; display: inline-block; margin: 0 8px;"
+                                   href="https://www.instagram.com/{{instagram}}" target="_blank">
+                                    <img alt="Instagram" width="18px" height="18px"
+                                         style="display: block; width: 18px; height: 18px; margin: 0 auto;"
+                                         src="http://signature.ministries.io/images/aimg/instagram_2x.png">
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #C1C1C1; padding-top: 24px">
+                <table style="letter-spacing: 0.01em">
+                    <tbody>
+                    <tr>
+                        <td style="padding-right:20px; vertical-align: top;">
+                            <a href="http://laguerison.org" target="_blank">
+                                <img id="logo" alt="AIMG - IAHM" width="200px" height="65px"
+                                     src="http://signature.ministries.io/images/aimg/{{ logo }}_2x.png">
+                            </a>
+                        </td>
+
+
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</script>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>AIMG - Signature generate</title>
+
+    <meta name="viewport"
+          content="initial-scale=1, minimum-scale=1, user-scalable=no, maximum-scale=1, width=device-width, minimal-ui">
+
+    <script type="text/javascript" src="js/mail.min.js"></script>
+
+</head>
+<body style="font-family: 'helvetica', 'arial', 'verdana', sans-serif;">
+
+
+</body>
+</html>
+
+<script id="mail" type="text/x-handlebars-template">
+
+    <table>
+        <tbody>
+        <tr style="vertical-align: top; padding-top:20px;">
+            <td style="padding-right:25px;">
+                <a href="http://laguerison.org" target="_blank">
+                    <img id="logo" alt="AIMG - IAHM" width="200px" height="65px"
+                         src="http://signature.ministries.io/images/aimg/{{ logo }}.png">
+                </a>
+            </td>
+            <td style="border-left: 1px solid #D0D0CF;padding-left:15px;color:#333333;font-family:arial;font-size:13px;line-height: 150%;">
+                <span style="font-weight: 600; color: #A3191C; font-size: 20px;">{{ name }}</span><br/>
+                {{ fonction }}<br/>
+                {{#if mobile}}
+                {{ mobile }}<br/>
+                {{/if}}
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="18px" height="18px" style="padding: 5px 20px 0 0;">
+                            <a style="text-decoration: none; display: inline-block;"
+                               href="https://www.facebook.com/JLTministries" target="_blank">
+                                <img alt="Facebook" width="18px" height="18px"
+                                     style="display: block;  width: 18px; height: 18px; margin: 0 auto;"
+                                     src="http://signature.ministries.io/images/aimg/facebook.png">
+                            </a>
+                        </td>
+                        <td width="21px" height="17px" style="padding: 5px 20px 0 0;">
+                            <a style="text-decoration: none; display: inline-block;"
+                               href="https://twitter.com/jltrachsel" target="_blank">
+                                <img alt="Twitter" width="21px" height="17px"
+                                     style="display: block; width: 21px; height: 17px; margin: 0 auto;"
+                                     src="http://signature.ministries.io/images/aimg/twitter.png">
+                            </a>
+                        </td>
+                        <td width="18px" height="18px" style="padding: 5px 20px 0 0;">
+                            <a style="text-decoration: none; display: inline-block;"
+                               href="https://www.instagram.com/jltrachsel/" target="_blank">
+                                <img alt="Instagram" width="18px" height="18px"
+                                     style="display: block; width: 18px; height: 18px; margin: 0 auto;"
+                                     src="http://signature.ministries.io/images/aimg/instagram.png">
+                            </a>
+                        </td>
+                        <!--
+                        <td width="16px" height="21px" style="padding: 5px 20px 0 0;">
+                            <a style="text-decoration: none; display: inline-block;"
+                               href="http://twitter.com" target="_blank">
+                                <img alt="Periscope" width="16px" height="21px"
+                                     style="display: block; width: 16px; height: 21px; margin: 0 auto;"
+                                     src="images/periscope.png"
+                                     srcset="   images/periscope.png 1x,
+                                                images/periscope_2x.png 2x">
+                            </a>
+                        </td>
+                        -->
+
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="address" style="display: block; font-size: 11px;">
+                    <div class="address" style="display: inline-block; text-decoration: none;"><span
+                            style="white-space: nowrap;">{{ phone }}</span> | <a target="_blank"
+                                                                                 href="{{ website_link }}"
+                                                                                 style="white-space: nowrap; color: #333333; text-decoration: none; ">{{
+                        website }}</a>
+                    </div>
+                </div>
+                <div style="display: block; font-size: 11px;">
+                    <div style="display: inline-block; text-decoration: none; white-space: nowrap;">{{ address }}</div>
+                    {{#if hasLine4}}
+                    <span> | </span>
+
+                    <div style="display: inline-block; text-decoration: none; white-space: nowrap;">{{ line4 }}</div>
+                    {{/if}}
+                </div>
+                <div style="color: #3b3b3b; display: block; text-decoration: none;">{{ line5 }}</div>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</script>

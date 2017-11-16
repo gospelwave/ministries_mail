@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c12a8014-1ef2-4d3d-aeed-a313b10bcfb0" name="ministries.io" url="http://ministries.io">
+        <fileTransfer host="ministries.io" port="21" rootFolder="/signature.ministries.io/" username="ministries">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
